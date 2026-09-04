@@ -2,6 +2,12 @@
 
 MERN platform for **vehicle health, workshop control, and payments**: fleet vitals, bookings, job cards, authorisation, invoices, and card pay.
 
+**GitHub:** [github.com/anjaliyadav44/drivecontrol](https://github.com/anjaliyadav44/drivecontrol)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/anjaliyadav44/drivecontrol)
+
+To host it on the web: create a free [MongoDB Atlas M0](https://www.mongodb.com/atlas) cluster, allow network `0.0.0.0/0`, then Deploy to Render and set `MONGO_URI` to your Atlas connection string (include `/drivecontrol` before the `?`). Render will also set `JWT_SECRET`. After the first deploy, set `CLIENT_URL` to your `https://….onrender.com` URL.
+
 ## Demo desks
 
 Password for all: `Demo1234`
