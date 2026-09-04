@@ -7,8 +7,8 @@ export default function Landing() {
       <header className="nav-public">
         <Logo wordmark size={40} />
         <nav>
-          <a href="#pulse">Health</a>
-          <a href="#workshop">Workshop</a>
+          <a href="#pulse" onClick={(e) => { e.preventDefault(); document.getElementById("pulse")?.scrollIntoView({ behavior: "smooth" }); }}>Health</a>
+          <a href="#workshop" onClick={(e) => { e.preventDefault(); document.getElementById("workshop")?.scrollIntoView({ behavior: "smooth" }); }}>Workshop</a>
           <Link to="/login">Sign in</Link>
           <Link to="/register" className="btn btn-copper btn-sm">Open a desk</Link>
         </nav>
@@ -28,7 +28,7 @@ export default function Landing() {
           </div>
         </div>
         <aside className="hero-card">
-          <img src="/logo.png" alt="" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="" />
           <p className="kicker" style={{ marginTop: 16 }}>Today across the yard</p>
           <div className="stat-row">
             <div><strong>82</strong><span>avg health</span></div>
